@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Фиолет — десерты, которые превращают обычный день в маленький праздник.">
+<title>ЯКУ ЛИК — десертная студия</title>
+<style>
+:root{--purple:#8f36b6;--deep:#64217f;--lilac:#d9a8ef;--cream:#fffaf5;--ink:#321b3a;--muted:#765e7c}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--cream)}a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}.nav{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:18px 6vw;background:rgba(111,35,143,.96);color:#fff;backdrop-filter:blur(12px)}.logo{font-weight:900;font-size:25px;letter-spacing:-1.5px;line-height:.9}.logo small{display:block;font-size:9px;letter-spacing:2px;margin-top:6px;font-weight:600}.links{display:flex;gap:27px;font-size:13px;font-weight:650}.links a:hover{opacity:.7}.nav-cta,.btn{border:0;border-radius:999px;padding:13px 20px;background:#fff;color:var(--deep);font-weight:750;cursor:pointer;transition:.2s}.btn:hover,.nav-cta:hover{transform:translateY(-2px);box-shadow:0 8px 22px #40145230}.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 80% 20%,#c96ce2 0,transparent 32%),linear-gradient(125deg,#76239c,#a846c7 58%,#7c2c9e);color:#fff;padding:78px 6vw 86px;min-height:620px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:35px}.hero:before{content:"";position:absolute;width:540px;height:540px;border:1px solid #ffffff30;border-radius:50%;right:-140px;top:-220px}.eyebrow{font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:800;opacity:.85}.hero h1{font-size:clamp(42px,6.1vw,82px);line-height:.96;letter-spacing:-4px;margin:22px 0 25px;max-width:700px}.hero p{font-size:17px;line-height:1.6;max-width:430px;color:#f8eafa}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn.primary{background:#fff;color:#6e248b}.btn.ghost{border:1px solid #ffffff80;background:transparent;color:#fff}.hero-art{position:relative;min-height:430px;display:flex;align-items:center;justify-content:center}.cake-canvas{width:100%;height:100%;display:block;border-radius:24px}.scribble{position:absolute;font-size:72px;color:#f7d7ff;z-index:2}.s1{left:0;top:8%}.s2{right:0;bottom:4%}.ticker{background:#f0d6f7;color:#6e248b;white-space:nowrap;overflow:hidden;padding:15px 0;font-weight:850;letter-spacing:2px;font-size:13px}.ticker span{display:inline-block;padding-left:20px;animation:move 28s linear infinite}@keyframes move{to{transform:translateX(-50%)}}section{padding:85px 6vw}.section-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:35px}.kicker{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--purple);font-weight:850}.section-head h2,.story h2,.franchise h2{font-size:clamp(32px,4vw,52px);line-height:1.02;letter-spacing:-2px;margin:10px 0 0}.section-head p{max-width:360px;line-height:1.6;color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.product{background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 8px 28px #4b24500b;transition:.25s}.product:hover{transform:translateY(-5px)}.product-3d{width:100%;height:260px;display:block;background:linear-gradient(160deg,#faf0ff,#f0d9fb);position:relative;overflow:hidden}.product-3d canvas,.product-3d .css-cake-wrap{width:100%;height:100%;display:block}.product-info{padding:20px}.product-info h3{margin:0 0 8px;font-size:20px}.product-info p{color:var(--muted);font-size:14px;line-height:1.5;min-height:42px}.product-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:16px}.price{font-weight:850;font-size:19px}.add{border:0;background:#f0d6f7;color:#6e248b;border-radius:50%;width:42px;height:42px;font-size:24px;cursor:pointer}.story{background:#f4e8f7;display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.story-3d{width:100%;height:420px;border-radius:28px 110px 28px 28px;overflow:hidden;background:linear-gradient(160deg,#faf0ff,#e9c8f5);position:relative}.story-3d canvas,.story-3d .css-cake-wrap{width:100%;height:100%;display:block}.story p{line-height:1.8;color:var(--muted);max-width:520px}.stats{display:flex;gap:30px;margin-top:28px;flex-wrap:wrap}.stat strong{display:block;font-size:30px;color:var(--purple)}.stat span{font-size:12px;color:var(--muted)}.franchise{background:linear-gradient(125deg,#742294,#a644c4);color:#fff;display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center}.franchise p{line-height:1.7;color:#f7e6fb;max-width:560px}.franchise .kicker{color:#f4d6ff}.benefits{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:25px}.benefit{border:1px solid #ffffff40;padding:16px;border-radius:16px;font-size:14px}.lead-form{background:#fff;color:var(--ink);padding:26px;border-radius:24px;box-shadow:0 20px 55px #310f3b30}.lead-form h3{margin:0 0 8px;font-size:24px}.lead-form p{color:var(--muted);font-size:13px;margin:0 0 18px}.lead-form input,.lead-form textarea,.lead-form select{width:100%;padding:13px 14px;margin:7px 0;border:1px solid #e7d9eb;border-radius:12px;background:#fff}.lead-form textarea{min-height:80px;resize:vertical}.lead-form .btn{width:100%;background:var(--purple);color:#fff;margin-top:8px}.form-note{font-size:11px!important;margin-top:10px!important}.contact{display:flex;justify-content:space-between;align-items:center;gap:25px;background:#fff}.contact h2{font-size:clamp(30px,4vw,46px);letter-spacing:-2px;margin:8px 0}.contact p{color:var(--muted)}footer{background:#291331;color:#e9d8ee;padding:28px 6vw;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12px}.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,120px);background:#2f1738;color:white;padding:14px 20px;border-radius:99px;z-index:40;transition:.3s;box-shadow:0 8px 30px #0003}.toast.show{transform:translate(-50%,0)}.mobile-menu{display:none}
+@media(max-width:800px){.links{display:none}.mobile-menu{display:block;background:transparent;color:white;border:1px solid #ffffff70;border-radius:50%;width:42px;height:42px;font-size:20px}.hero{grid-template-columns:1fr;padding-top:60px}.hero-art{min-height:370px}.hero h1{letter-spacing:-2.5px}.grid{grid-template-columns:repeat(2,1fr)}.story,.franchise{grid-template-columns:1fr}.story-3d{height:320px}.section-head{align-items:start;flex-direction:column}.contact{align-items:start;flex-direction:column}}
+@media(max-width:520px){.nav{padding:15px 5vw}.nav-cta{padding:10px 13px;font-size:12px}.hero{padding:52px 5vw 55px;min-height:auto}.hero h1{font-size:47px}.hero-art{min-height:320px}section{padding:60px 5vw}.grid{grid-template-columns:1fr}.product-3d{height:260px}.benefits{grid-template-columns:1fr 1fr}.stats{gap:18px}.story-3d{height:270px}.lead-form{padding:20px}}
+
+/* CSS-торт для карточки №1 */
+.css-cake-wrap{display:flex;align-items:center;justify-content:center;perspective:800px;transform-style:preserve-3d}
+.css-cake{position:relative;width:140px;height:160px;transform-style:preserve-3d;will-change:transform;transition:transform 80ms linear}
+.css-cake .layer{position:absolute;left:50%;transform:translateX(-50%) rotateX(72deg);width:130px;height:130px;border-radius:50%;box-shadow:0 10px 24px #6e248b33}
+.css-cake .l1{bottom:0;background:linear-gradient(135deg,#f4c2a1,#e8a87c)}
+.css-cake .l2{bottom:42px;background:linear-gradient(135deg,#ffe0e9,#ffc2d4)}
+.css-cake .l3{bottom:84px;background:linear-gradient(135deg,#fff5fb,#ffd9ea)}
+.css-cake .icing{position:absolute;left:50%;bottom:118px;transform:translateX(-50%) rotateX(72deg);width:132px;height:132px;border-radius:50%;background:radial-gradient(circle at 40% 40%,#ff8fab,#e85a80);box-shadow:0 8px 22px #d1315d44}
+.css-cake .cherry{position:absolute;left:50%;bottom:160px;transform:translateX(-50%);width:22px;height:22px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ff5c7a,#b00020);box-shadow:0 4px 10px #00000033}
+
+/* 3D-канвасы */
+.cake-canvas{will-change:transform}
+</style>
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#top">ЯКУ ЛИК<small>ДЕСЕРТНАЯ СТУДИЯ</small></a>
+  <nav class="links"><a href="#menu">Десерты</a><a href="#story">О нас</a><a href="#franchise">Партнёрам</a><a href="#contacts">Контакты</a></nav>
+  <a class="nav-cta" href="#menu">Выбрать десерт ↗</a>
+  <button class="mobile-menu" aria-label="Открыть меню" onclick="document.querySelector('#menu').scrollIntoView({behavior:'smooth'})">☰</button>
+</header>
+<main id="top">
+<section class="hero">
+ <div><div class="eyebrow">Маленькие радости каждый день</div><h1>МИР<br>СТАНОВИТСЯ<br>СЛАЩЕ.</h1><p>Авторские десерты, нежные кремы и яркие вкусы. Создаём сладкие моменты, которые хочется разделить.</p><div class="hero-actions"><a class="btn primary" href="#menu">Смотреть десерты ↗</a><a class="btn ghost" href="#franchise">Стать партнёром</a></div></div>
+ <div class="hero-art"><span class="scribble s1">♡</span>
+   <canvas class="cake-canvas" id="heroCake" aria-label="3D-торт"></canvas>
+ <span class="scribble s2">✧</span></div>
+</section>
+<div class="ticker"><span>НЕЖНО • ВКУСНО • С ЛЮБОВЬЮ • НЕЖНО • ВКУСНО • С ЛЮБОВЬЮ • НЕЖНО • ВКУСНО • С ЛЮБОВЬЮ • </span></div>
+<section id="menu">
+ <div class="section-head"><div><div class="kicker">Витрина настроения</div><h2>С чего начнём?</h2></div><p>Каждый десерт — маленькая история. Выбирай любимый вкус или открывай новый.</p></div>
+ <div class="grid">
+  <article class="product">
+    <div class="product-3d" id="cake1" aria-label="3D-торт №1">
+      <div class="css-cake-wrap">
+        <div class="css-cake" data-css-cake>
+          <div class="layer l1"></div>
+          <div class="layer l2"></div>
+          <div class="layer l3"></div>
+          <div class="icing"></div>
+          <div class="cherry"></div>
+        </div>
+      </div>
+    </div>
+    <div class="product-info"><h3>Шоколадная история</h3><p>Насыщенный шоколад, воздушный крем и мягкий бисквит.</p><div class="product-bottom"><span class="price">от 490 ₽</span><button class="add" onclick="addToOrder('Шоколадная история')" aria-label="Добавить шоколадный торт">+</button></div></div>
+  </article>
+  <article class="product">
+    <div class="product-3d" id="cake2" aria-label="3D-торт №2"></div>
+    <div class="product-info"><h3>Пончики «Облачко»</h3><p>Нежное тесто и глазурь, которая поднимает настроение.</p><div class="product-bottom"><span class="price">от 190 ₽</span><button class="add" onclick="addToOrder('Пончики «Облачко»')" aria-label="Добавить пончики">+</button></div></div>
+  </article>
+  <article class="product">
+    <div class="product-3d" id="cake3" aria-label="3D-торт №3"></div>
+    <div class="product-info"><h3>Ягодное облако</h3><p>Лёгкий сливочный десерт с ягодной свежестью.</p><div class="product-bottom"><span class="price">от 320 ₽</span><button class="add" onclick="addToOrder('Ягодное облако')" aria-label="Добавить ягодный десерт">+</button></div></div>
+  </article>
+ </div>
+</section>
+<section class="story" id="story">
+ <div class="story-3d" id="storyCake" aria-label="3D-торт в разделе истории"></div>
+ <div><div class="kicker">Сладкое дело с душой</div><h2>Не просто десерт.<br>Твоё настроение.</h2><p>«Фиолет» — концепция современной десертной студии, где вкус встречается с эстетикой. Мы верим, что даже самый обычный день заслуживает красивого финала: чашки кофе, любимого пирожного и нескольких минут для себя.</p><p>Готовим небольшими партиями, уделяем внимание деталям и постоянно ищем сочетания, которые удивляют.</p><div class="stats"><div class="stat"><strong>200+</strong><span>идей для витрины</span></div><div class="stat"><strong>7 дней</strong><span>в неделю для радости</span></div><div class="stat"><strong>100%</strong><span>внимания к деталям</span></div></div></div>
+</section>
+<section class="franchise" id="franchise">
+ <div><div class="kicker">Для тех, кто хочет больше</div><h2>Открой свою<br>сладкую историю.</h2><p>Рассматриваешь собственную кондитерскую или хочешь поставлять десерты в своё заведение? Давай обсудим формат сотрудничества — от небольшой витрины до отдельной студии.</p><div class="benefits"><div class="benefit">✦ Помощь с концепцией</div><div class="benefit">✦ Ассортимент и подача</div><div class="benefit">✦ Поддержка на старте</div><div class="benefit">✦ Формат под твой город</div></div></div>
+ <form class="lead-form" id="leadForm"><h3>Обсудим идею?</h3><p>Оставь контакты — подготовим следующий шаг.</p><input name="name" placeholder="Как к тебе обращаться" required><input name="phone" placeholder="Телефон для связи" required><select name="interest"><option value="Партнёрство">Хочу стать партнёром</option><option value="Поставка десертов">Интересуют поставки десертов</option><option value="Другое">Другой вопрос</option></select><textarea name="message" placeholder="Город или пара слов о проекте (необязательно)"></textarea><button class="btn" type="submit">Отправить заявку ↗</button><p class="form-note">Демо-форма: откроет подготовленное сообщение в почтовом приложении. Перед публикацией укажите рабочую почту.</p></form>
+</section>
+<section class="contact" id="contacts"><div><div class="kicker">На связи</div><h2>Есть повод для сладкого?</h2><p>Напиши нам — поможем выбрать десерт или обсудим сотрудничество.</p></div><a class="btn primary" href="#franchise">Связаться с нами ↗</a></section>
+</main>
+<footer><a class="logo" href="#top">ЯКУ ЛИК<small>ДЕСЕРТНАЯ СТУДИЯ</small></a><span>Концепт сайта • 2026</span><span>Десерты, созданные с любовью ♡</span></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script type="importmap">
+{ "imports": { "three": "https://unpkg.com/three@0.160.0/build/three.module.js" } }
+</script>
+
+<script>
+const toast=document.getElementById('toast');
+function showToast(message){toast.textContent=message;toast.classList.add('show');clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>toast.classList.remove('show'),2600)}
+function addToOrder(name){showToast('Добавлено в список интереса: '+name)}
+document.getElementById('leadForm').addEventListener('submit',function(e){e.preventDefault();const data=new FormData(this);const subject=encodeURIComponent('Заявка с сайта ЯКУ ЛИК — '+data.get('interest'));const body=encodeURIComponent('Имя: '+data.get('name')+'\nТелефон: '+data.get('phone')+'\nИнтерес: '+data.get('interest')+'\nКомментарий: '+(data.get('message')||'—'));showToast('Открываем почтовое приложение…');setTimeout(()=>{window.location.href='mailto:hello@example.com?subject='+subject+'&body='+body},450)});
+</script>
+
+<script type="module">
+import * as THREE from 'three';
+
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* =====================================================
+   Утилита: создать торт разного стиля
+   style = 'chocolate' | 'cloud' | 'berry' | 'story' | 'hero'
+   ===================================================== */
+function createCakeScene(container, style) {
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 100);
+  camera.position.set(0, 1.6, 6.2);
+  camera.lookAt(0, 0.4, 0);
+
+  const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.setClearColor(0x000000, 0);
+  container.appendChild(renderer.domElement);
+  renderer.domElement.style.width = '100%';
+  renderer.domElement.style.height = '100%';
+  renderer.domElement.style.display = 'block';
+
+  scene.add(new THREE.AmbientLight(0xffffff, 1.3));
+  const key = new THREE.DirectionalLight(0xffffff, 2.2);
+  key.position.set(3, 6, 4);
+  scene.add(key);
+  const rim = new THREE.DirectionalLight(0xffd6f5, 1.2);
+  rim.position.set(-4, 3, -4);
+  scene.add(rim);
+
+  const cake = new THREE.Group();
+  scene.add(cake);
+
+  // Палитры
+  const palettes = {
+    chocolate: { layers: [0x6b3a1f, 0xf4c2a1, 0x6b3a1f], icing: 0x3b1f10, cherry: 0xd90429 },
+    cloud:     { layers: [0xffe4e1, 0xffc2d4, 0xffe4e1], icing: 0xff8fab, cherry: 0xff3b6b },
+    berry:     { layers: [0xffe0e9, 0xf4c2a1, 0xffe0e9], icing: 0xc8256d, cherry: 0x7b1fa2 },
+    story:     { layers: [0xf4c2a1, 0xffe4e1, 0xf4c2a1], icing: 0xff8fab, cherry: 0xd90429 },
+    hero:      { layers: [0xffe4e1, 0xf4c2a1, 0xffe4e1], icing: 0xff8fab, cherry: 0xd90429 },
+  };
+  const p = palettes[style] || palettes.story;
+
+  // Коржи
+  p.layers.forEach((color, i) => {
+    const geo = new THREE.CylinderGeometry(1.5, 1.5, 0.55, 48);
+    const mat = new THREE.MeshStandardMaterial({ color, roughness: 0.75, metalness: 0.05 });
+    const layer = new THREE.Mesh(geo, mat);
+    layer.position.y = -0.55 + i * 0.55;
+    cake.add(layer);
+
+    // кремовая прослойка
+    const cream = new THREE.Mesh(
+      new THREE.CylinderGeometry(1.52, 1.52, 0.08, 48),
+      new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.4 })
+    );
+    cream.position.y = -0.55 + i * 0.55 + 0.3;
+    cake.add(cream);
+  });
+
+  // Глазурь
+  const icing = new THREE.Mesh(
+    new THREE.CylinderGeometry(1.58, 1.58, 0.22, 48),
+    new THREE.MeshStandardMaterial({ color: p.icing, roughness: 0.35, metalness: 0.1 })
+  );
+  icing.position.y = 1.15;
+  cake.add(icing);
+
+  // Капли глазури по кругу
+  const drips = new THREE.Group();
+  const dripGeo = new THREE.SphereGeometry(0.11, 16, 16);
+  const dripMat = new THREE.MeshStandardMaterial({ color: p.icing, roughness: 0.35 });
+  for (let i = 0; i < 14; i++) {
+    const a = (i / 14) * Math.PI * 2;
+    const d = new THREE.Mesh(dripGeo, dripMat);
+    d.position.set(Math.cos(a) * 1.5, 1.0 - Math.random() * 0.25, Math.sin(a) * 1.5);
+    d.scale.y = 1.4 + Math.random();
+    drips.add(d);
+  }
+  cake.add(drips);
+
+  // Вишенка
+  const cherry = new THREE.Mesh(
+    new THREE.SphereGeometry(0.28, 24, 24),
+    new THREE.MeshStandardMaterial({ color: p.cherry, roughness: 0.2, metalness: 0.2 })
+  );
+  cherry.position.y = 1.55;
+  cake.add(cherry);
+
+  // Хвостик вишенки
+  const stem = new THREE.Mesh(
+    new THREE.CylinderGeometry(0.02, 0.02, 0.3, 8),
+    new THREE.MeshStandardMaterial({ color: 0x2d5016 })
+  );
+  stem.position.set(0.05, 1.85, 0);
+  stem.rotation.z = -0.3;
+  cake.add(stem);
+
+  // Позиционируем торт ниже центра
+  cake.position.y = -0.4;
+
+  // Resize
+  function resize() {
+    const w = container.clientWidth || 300;
+    const h = container.clientHeight || 260;
+    renderer.setSize(w, h, false);
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  // Вращение от скролла
+  let targetRot = 0;
+  let currentRot = 0;
+
+  function onScroll() {
+    const rect = container.getBoundingClientRect();
+    const vh = window.innerHeight || 800;
+    const center = rect.top + rect.height / 2;
+    const progress = (vh - center) / (vh + rect.height);
+    targetRot = progress * Math.PI * 2.2;
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Авто-вращение для карточек (медленное, чтобы было живо)
+  let autoSpin = (style === 'hero' || style === 'story') ? 0.0 : 0.25;
+
+  function animate() {
+    requestAnimationFrame(animate);
+    if (!reduceMotion) {
+      currentRot += (targetRot - currentRot) * 0.08;
+      cake.rotation.y = currentRot + performance.now() * 0.0002 * autoSpin;
+    } else {
+      cake.rotation.y = 0.6;
+    }
+    renderer.render(scene, camera);
+  }
+  animate();
+}
+
+/* =====================================================
+   CSS-торт (карточка №1) — вращение через CSS-переменную
+   ===================================================== */
+function setupCssCake() {
+  const wrap = document.querySelector('[data-css-cake]');
+  if (!wrap) return;
+
+  function onScroll() {
+    const rect = wrap.getBoundingClientRect();
+    const vh = window.innerHeight || 800;
+    const center = rect.top + rect.height / 2;
+    const progress = (vh - center) / (vh + rect.height);
+    const rot = progress * 360 * 1.5;
+    const tilt = Math.sin(progress * Math.PI * 2) * 12;
+    wrap.style.transform = `rotateY(${rot}deg) rotateX(${tilt}deg)`;
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+}
+
+/* =====================================================
+   Инициализация
+   ===================================================== */
+function initAll() {
+  setupCssCake();
+
+  const heroEl = document.getElementById('heroCake');
+  if (heroEl) createCakeScene(heroEl, 'hero');
+
+  const c1 = document.getElementById('cake1');
+  const c2 = document.getElementById('cake2');
+  const c3 = document.getElementById('cake3');
+  const story = document.getElementById('storyCake');
+
+  if (c1) createCakeScene(c1, 'chocolate');
+  if (c2) createCakeScene(c2, 'cloud');
+  if (c3) createCakeScene(c3, 'berry');
+  if (story) createCakeScene(story, 'story');
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initAll);
+} else {
+  initAll();
+}
+</script>
+</body>
+</html>
